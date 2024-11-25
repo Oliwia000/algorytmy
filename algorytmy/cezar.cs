@@ -30,15 +30,17 @@ namespace algorytmy
                 char litera = tekst[i];
                 if (char.IsLetter(litera))
                 {
-                    char offset = char.IsUpper(litera);
-                   
-
+                    char offset = char.IsUpper(litera) ? 'A' : 'a';
+                    zaszyfrowane[i] = (char)(((litera + klucz - offset) % 26) + offset);
                 }
-
+                else
+                {
+                    zaszyfrowane[i] = litera;
+                } 
             }
 
+            return  new string(zaszyfrowane);
         }
-
         
     }
 }
