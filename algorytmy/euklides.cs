@@ -12,8 +12,12 @@ namespace algorytmy
         {
             Console.WriteLine("Podaj pierwszą liczbę");
 
+            int a = int.Parse(Console.ReadLine());
+
 
             Console.WriteLine("Podaj drugą liczbę");
+
+            int b= int.Parse(Console.ReadLine());
         }
     }
 }
