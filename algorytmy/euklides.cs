@@ -14,10 +14,26 @@ namespace algorytmy
 
             int a = int.Parse(Console.ReadLine());
 
-
             Console.WriteLine("Podaj drugą liczbę");
 
-            int b= int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            int nwd = CalculateGCD(a, b);
+
+            Console.WriteLine($"Największy wspólny dzielnik (NWD) liczb {a} i {b} to:{nwd}");
+
+
+        }
+
+        private static int CalculateGCD(int a, int b)
+        {
+            while (b != 0)
+            {
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
         }
     }
 }
