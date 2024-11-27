@@ -17,6 +17,7 @@ namespace algorytmy
             Console.WriteLine("7 - Sortowanie bąbelkowe");
             Console.WriteLine("8 - Sortowanie przez wybór");
             Console.WriteLine("9 - Sortowanie przez wstawianie");
+            Console.WriteLine("10 - Wyjście");
 
 
             int wybor = int.Parse(Console.ReadLine());
@@ -54,6 +55,10 @@ namespace algorytmy
                 case 9:
                     wstawianie.Run();
                 break;
+
+                case 10:
+                    Console.WriteLine("Zamykanie programu.");
+                    return;
                 default:
                     Console.WriteLine("Nieprawidłowy wybór");
                     break;
