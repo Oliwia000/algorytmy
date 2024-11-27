@@ -16,7 +16,7 @@ namespace algorytmy
             Console.WriteLine("Podaj tekst do  zaszyfrowania");
             string tekst = Console.ReadLine();
 
-            Console.WriteLine("Podaj klucz do szyfrowania(liczba całkowita):");
+            Console.WriteLine("Podaj klucz do szyfrowania(liczba całkowita):");  // Liczba określająca o ile miejsc przesunąć litery.
             int klucz = int.Parse(Console.ReadLine());
 
             string zaszyfrowanyTekst = Encrypt(tekst, klucz); // Wywołanie funkcji szyfrującej
