@@ -25,15 +25,27 @@ namespace algorytmy
         private static int FindMin(int[] liczby)
         {
             int min = liczby[0];
-
+            foreach (int liczba in liczby)
+            {
+                if (liczba < min)
+                    min = liczba;
+            }
+            return min;
         }
 
 
 
         private static int FindMax(int[] liczby) 
-        { 
+        {
+            int max = liczby[0];
+            foreach (int liczba in liczby)
+            {
+                if (liczba > max)
+                    max = liczba;
+            }
+            return max;
         }
 
-    }
+    
 }
 
