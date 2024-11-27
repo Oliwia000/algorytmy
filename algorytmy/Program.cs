@@ -6,6 +6,7 @@ namespace algorytmy
     {
         public static void Main(string[] args)
         {
+            /// Główna funkcja programu, umożliwiająca wybór algorytmu do uruchomienia.
 
             Console.WriteLine(" Wybierz Algorytm:  ");
             Console.WriteLine("1 - Sprawdzanie,czy liczba jest liczbą pierwszą");

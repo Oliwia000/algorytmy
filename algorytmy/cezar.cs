@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace algorytmy
 {
+    /// Główna funkcja uruchamiająca algorytm szyfrowania Cezara.
+    /// Użytkownik podaje tekst i klucz do zaszyfrowania.
+
     public static class cezar
     {
         public static void Run()
@@ -16,10 +19,12 @@ namespace algorytmy
             Console.WriteLine("Podaj klucz do szyfrowania(liczba całkowita):");
             int klucz = int.Parse(Console.ReadLine());
 
-            string zaszyfrowanyTekst = Encrypt(tekst, klucz);
+            string zaszyfrowanyTekst = Encrypt(tekst, klucz); // Wywołanie funkcji szyfrującej
 
             Console.WriteLine($"Zaszyfrowany tekst: {zaszyfrowanyTekst}");
         }
+
+        /// Szyfruje tekst poprzez przesunięcie liter o określoną liczbę miejsc w alfabecie.
 
         private static string Encrypt(string tekst, int klucz)
         {
