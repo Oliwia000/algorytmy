@@ -1,0 +1,4 @@
+Œrodowisko programistyczne: Microsoft Visual Studio 2022
+Jêzyk programowania: C#
+System operacyjny: Windows 11
+
