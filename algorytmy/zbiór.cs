@@ -35,7 +35,7 @@ namespace algorytmy
 
 
 
-        private static int FindMax(int[] liczby) 
+        private static int FindMax(int[] liczby)
         {
             int max = liczby[0];
             foreach (int liczba in liczby)
@@ -46,6 +46,6 @@ namespace algorytmy
             return max;
         }
 
-    
+    }
 }
 

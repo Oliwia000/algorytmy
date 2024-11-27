@@ -13,19 +13,18 @@ namespace algorytmy
 
             Console.WriteLine("Podaj liczbę n (elem.cięgu Fibonacciego):");
             int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i <= n; i++)
             {
-         Console.WriteLine($"F({i})={CalculateFibonacci(i)}");
+                Console.WriteLine($"F({i})={CalculateFibonacci(i)}");
             }
         }
 
-        public static  int CalculateFibonacci(int n)
+        public static int CalculateFibonacci(int n)
         {
-          //  int (n <= 1)
-                return n;
+            if (n <= 1)
+                return n; 
+
+            return CalculateFibonacci(n - 1) + CalculateFibonacci(n - 2); 
         }
-       // return CalculateFibonacci(n-1) + CalculateFibonacci(n -2);
-
-
     }
 }
