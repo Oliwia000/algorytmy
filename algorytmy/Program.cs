@@ -73,10 +73,3 @@ namespace algorytmy
     }
 }
 
-
-
-
-
-
-
-
