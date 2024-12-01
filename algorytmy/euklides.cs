@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace algorytmy
 {
+
     public static class euklides
     {
-        public static void Run()
+        /// Główna metoda uruchamiająca proces obliczania NWD.
+        /// Prosi użytkownika o wprowadzenie dwóch liczb, a następnie wyświetla wynik.
+       public static void Run()
         {
             Console.WriteLine("Podaj pierwszą liczbę");
 
@@ -18,7 +21,7 @@ namespace algorytmy
 
             int b = int.Parse(Console.ReadLine());
 
-            int nwd = CalculateGCD(a, b);
+            int nwd = CalculateGCD(a, b); // Oblicza NWD za pomocą metody CalculateGCd
 
             Console.WriteLine($"Największy wspólny dzielnik (NWD) liczb {a} i {b} to:{nwd}");
 
@@ -29,11 +32,11 @@ namespace algorytmy
         {
             while (b != 0)
             {
-                int temp = b;
-                b = a % b;
-                a = temp;
+                int temp = b; // Przechowuje wartość b tymczasowo
+                b = a % b;  // Oblicza resztę z dzielenia a przez b
+                a = temp;  // Przypisuje wartość tymczasową do a
             }
-            return a;
+            return a;  // Zwraca NWD
         }
     }
 }
